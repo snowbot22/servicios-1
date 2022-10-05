@@ -1,0 +1,248 @@
+/*
+*NORMALIZE
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+/*
+*VARIABLES
+*/  
+:root{
+    /* FONTS */
+    --title: 'Montserrat', sans-serif;
+    --paragraph: 'Hind', sans-serif;
+}
+
+/*
+*IMGS
+*/
+.img--large{
+    width: 100%;
+    height: 100%;
+}
+.img--radius--top{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.border--left{
+    border-left: 1px solid #43156A;
+}
+
+
+/*
+*HEADER
+*/
+header{
+    background-color: white;
+}
+
+/*
+*NAV-MOBILE
+*/
+.nav--mobile{
+    background-color: white;
+    padding: 1rem 0;
+}
+.nav--mobile__ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav--mobile__ul--link{
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #43156A;
+    font-family: var(--paragraph);
+    font-weight: 600;
+}
+.nav--mobile__ul--images{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3vw;
+}
+.nav--mobile__ul--images a{
+    color: #43156A;
+}
+
+/*
+*FOOTER
+*/
+footer{
+    background-color: #43156A;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+.footer__container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.footer__imgs{
+    display: flex;
+    gap: 1rem;
+}
+.footer__imgs i{
+    color: white;
+    cursor: pointer;
+}
+.footer__text{
+    font-size: 1.4rem;
+    font-family: var(--paragraph);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    color: white;
+}
+.footer__title{
+    font-size: 1.6rem;
+    font-family: var(--title);
+    color: white;
+}
+
+/*
+*SERVICIOS OUTPUT
+*/
+.servicios--output{
+    display: grid;
+    grid-template-columns: 35px 1fr 35px;
+    place-items: center;
+    padding: 3rem 0;
+    width: 100%;
+    height: 370px;
+}
+.servicios--output i {
+    color: #43156A;
+}
+.servicios__card{
+  width: 100%;
+  height: 100%;
+}
+.servicios__card--content{
+    grid-column: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.servicios__card--content--text{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.servicios__card--content--text h2{
+    font-size: 2rem;
+    font-family: var(--title);
+    color: #43156A;
+}
+.servicios__card--content--text p{
+    font-size: 1.7rem;
+    font-family: var(--paragraph);
+}
+.servicios__card--content--text button{
+    background-color: #2BB741;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--paragraph);
+}
+.servicios__card--content--figure{
+    height: 170px;
+}
+
+/*
+*SECTION 3
+*/
+
+.section--3--title{
+    font-size: 2.5rem;
+    font-family: var(--title);
+    text-align: center;
+    padding: 3rem 0rem 0;
+    color: #43156A;
+}
+.section--3__container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    height: max-content;
+    row-gap: 3rem;
+    padding: 3rem 0;
+}
+.card{
+    width: 90%;
+    height: 300px;
+    background-color: #43156A;
+    border-radius: 1rem;
+    padding: 0 0 2rem 0;
+    max-width: 350px;
+}
+.card figure{
+    height: 70%;
+}
+.card__text{
+    height: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0rem 1rem;
+}
+.card__text h3{
+    font-size: 1.7rem;
+    font-family: var(--paragraph);
+    max-width: 220px;
+    color: white;
+    text-align: center;
+}
+.card__text a{
+    height: 30%;
+    width: 40%;
+}
+.card__text a button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    background-color: #2BB741;
+    color: white;
+    font-size: 1.4rem;
+    font-family: var(--paragraph);
+    cursor: pointer;
+}
+
+/*
+*MEDIA QUERIES
+*/
+.nav--desktop{
+    display: none;
+}
+
+@media screen and (min-width:510px) {
+    .servicios__card--content{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
